@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuLogo.master.cs" Inherits="WebProjects.MenuLogo" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border: 1px solid #FFFFFF;
+        }
+        .auto-style3 {
+            width: 522px;
+            height: 49px;
+        }
+        .auto-style4 {
+            height: 49px;
+        }
+        .auto-style5 {
+            width: 522px;
+            height: 55px;
+        }
+        .auto-style6 {
+            height: 55px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="background-color:aquamarine;font-family:Arial;font-size:large;height:150px;width:auto">
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Online Shopping Website&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:Image ID="Image1" runat="server" Height="69px" ImageUrl="~/download.jpg" Width="87px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style5">
+                        <asp:HyperLink ID="HyperLink1" runat="server">Login</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink2" runat="server">products</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink3" runat="server">Order</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:HyperLink ID="HyperLink4" runat="server">Complaints</asp:HyperLink>
+                    </td>
+                    <td class="auto-style6">
+                        <asp:Image ID="Image2" runat="server" ImageUrl="~/selfservice.jpg" />
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~/selfservice.jpg" />
+                        <asp:Image ID="Image4" runat="server" Height="66px" ImageUrl="~/myimg.jpg" Width="94px" />
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    <div style="background-color:lightcoral;font-family:'Times New Roman';font-size:large">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
